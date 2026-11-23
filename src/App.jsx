@@ -131,21 +131,39 @@ function App() {
 
           {/* Social Links */}
           <div className="hero-socials">
+
             <a
               href="https://www.linkedin.com/in/sofiya-parvez-mohammad-036a25324"
               target="_blank"
               rel="noopener noreferrer"
+              className="social-link"
             >
+              <span className="linkedin-icon">in</span>
               LinkedIn ↗
             </a>
+
+            <span className="social-divider"></span>
 
             <a
               href="https://github.com/Sofiya1308"
               target="_blank"
               rel="noopener noreferrer"
+              className="social-link"
             >
+              <svg
+                className="github-icon"
+                viewBox="0 0 24 24"
+                width="27"
+                height="27"
+                fill="currentColor"
+                aria-label="GitHub"
+                role="img"
+              >
+                <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.08c-3.1.68-3.76-1.32-3.76-1.32-.5-1.3-1.23-1.65-1.23-1.65-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.92.1-.72.39-1.21.7-1.49-2.47-.28-5.07-1.24-5.07-5.5 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.43.11-2.97 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.69.11 2.97.72.78 1.15 1.78 1.15 3 0 4.27-2.6 5.21-5.08 5.49.4.35.75 1.02.75 2.06V22c0 .29.2.64.76.53A11.1 11.1 0 0 0 12 .9Z" />
+              </svg>
               GitHub ↗
             </a>
+
           </div>
 
         </div>
@@ -156,7 +174,7 @@ function App() {
 
           <div className="profile-circle">
             <img
-              src="/profile.jpeg"
+              src={`${import.meta.env.BASE_URL}profile.jpeg`}
               alt="Sofiya Parvez"
               className="profile-photo"
             />
