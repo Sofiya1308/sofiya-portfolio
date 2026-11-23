@@ -174,10 +174,10 @@ function App() {
 
           <div className="profile-circle">
             <img
-              src={`${import.meta.env.BASE_URL}profile.jpeg`}
-              alt="Sofiya Parvez"
-              className="profile-photo"
-            />
+  src={`${import.meta.env.BASE_URL}profile.jpeg`}
+  alt="Sofiya Parvez"
+  className="profile-photo"
+/>
           </div>
 
           <div className="floating-card card-one">
